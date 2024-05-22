@@ -1,0 +1,738 @@
+/* start main  */
+.main{
+    display: flex;
+    height: 100%;
+}
+/* end main  */
+
+
+/* start sidebare css  */
+
+
+/* start section one */
+.section-one {
+    width: 25%;
+    height: 233px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: white;
+    height: 871px;
+}
+
+@media (max-width: 767px) {
+    .section-one {
+        display: none;
+    }
+}
+
+/* end section one */
+
+/* start section two */
+.section-two {
+    background-color: #121212;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* end of section two */
+
+/* start section three */
+.section-three {
+    display: flex;
+    align-items: center; /* Changed justify-items to align-items */
+    gap: 3px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.section-three p {
+    font-weight: bold; /* Changed font: bold to font-weight: bold */
+}
+
+.section-three img{
+    width: 15px;
+}
+/* end section three */
+
+/* start section four  */
+
+.section-four{
+    background-color: #121212;
+    height: 85%;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+/* end section four  */
+
+/* start section five  */
+.section-five{
+
+    display: flex;
+    justify-items: center;
+    padding: 4px;
+    justify-content: space-between;
+
+}
+/* end section five  */
+
+/* start section six  */
+
+.section-six{
+
+    display: flex;
+    justify-items: center;
+    gap: 3px;
+}
+
+.section-six img {
+    width: 40px;
+}
+
+.section-six p {
+    font-weight:350px;
+}
+/* end section six  */
+
+/* start section seven  */
+.section-seven{
+    display: flex;
+    justify-items: center;
+    gap: 3px;
+}
+
+.section-seven img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin: 20px 10px 0px 2px;
+    
+}
+/* end section seven  */
+
+/* start section eight  */
+.section-eight{
+    padding: 4px;
+    background-color: #242424;
+    margin: 20px;
+    border-radius: round 2px;
+    font-weight: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.section-eight p{
+    font-weight: lighter;
+    margin: 0px 0px 22px -29px;
+
+}
+
+
+.section-eight h1{
+    font-size: medium;
+    margin: 0px 12px 2px -30px;
+}
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #121212;
+    margin-left: -20px ;
+    width: 71% auto;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+/* end section eight  */
+
+/* end sidebare css  */
+/* ****************************************************************************************************************************************** */
+/* start player css  */
+
+/* start section one  */
+.section-1{
+    height: 10%;
+    background: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    
+
+}
+
+@media (max-width: 767px) {
+    .section-1 {
+        justify-content: center;
+
+    }
+}
+
+/* end section one  */
+
+/* start .section-two  */
+.section-2 {
+    display: none;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.section-2 img {
+    width: 36px;
+}
+/* Media query for large screens */
+@media (min-width: 1024px) {
+    .section-2 {
+        display: block; /* Show on screens wider than 1024px */
+        
+    }
+}
+
+/* end section two  */
+
+/* start section three  */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin: 0px 0px 0px 140px;}
+/* end section three  */
+
+/* start section four  */
+.section-4{
+    display: flex;
+    gap: 16px;
+
+}
+
+.section-4 img {
+    width: 16px;
+    cursor: pointer;
+}
+/* end section four  */
+
+/* start section five  */
+.section-5{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 40vw;
+    max-width: 100%;
+    height: 4px;
+    background-color: #D1D5DB; /* Tailwind's bg-gray-300 */
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0; /* Adjust this value to represent the progress */
+    background-color: rgb(7, 7, 109); /* Tailwind's bg-green-500 */
+    border-radius: 50px;
+}
+
+/* end section five  */
+
+/* start section six */
+.section-6 {
+    display: none;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Show on screens wider than 1024px */
+@media (min-width: 1024px) {
+    .section-6 {
+        display: flex; /* Use flex display to align items in one line */
+    }
+}
+
+.section-6 img {
+    width: 15px;
+}
+
+.section-6-chill {
+    width: 80px;
+    background: whitesmoke;
+    height: 4px;
+    border-radius: 50px;
+}
+
+/* end section six */
+
+/* end player css  */
+
+/* ****************************************************************************************************************************************************************************** */
+
+/* start display css  */
+.one {
+    width: 100%;
+
+    margin: 16px;
+    padding: 12px 24px;
+    padding-top: 16px;
+    /* border-radius: 50px; */
+    background: #121212;
+    color: white;
+    overflow: auto;
+}
+
+@media (min-width: 1024px) {
+    .one {
+        width: 100%;
+        margin-left: 4px; /* Removes left margin for large screens */
+        margin-top: 0;
+        margin-right: 4px;
+        height: 846px;
+            }
+}
+/* end display css  */
+
+/* *********************************************************************************************************************************************************************************************** */
+
+/* start navbare css  */
+
+/* start nav-1 */
+.nav-1 {
+    width: 75vw; /* Change width to 100vw */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 350px;
+}
+
+/* end nav-1  */
+
+/* start nav-2 */
+.nav-2{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-2 img{
+    width: 32px;
+    background: black;
+    padding: 8px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+}
+/* end nav-2  */
+
+/* start nav-3  */
+.nav-3{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.nav-3 p {
+    background: white;
+    color: black;
+    font-size: 15px;
+    padding-left: 16px;
+    padding-right: 16px;    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 16px;
+    display: none;
+    cursor: pointer;
+
+
+}
+
+@media (min-width: 768px) {
+    .nav-3 p {
+      display: block;
+    }
+  }
+
+  .nav-3 .install{
+    background: black;
+    color: white;
+    font-size: 15px;
+    padding-left: 16px;
+    padding-right: 16px;    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.nav-3 .letter{
+    background-color: purple;
+    color: black;
+    width: 28px;
+    height: 28px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+/* end nav-3  */
+
+/* start nav-4  */
+.nav-4{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.nav-4 p{
+    background: white;
+    color: black;
+    padding-left: 16px;
+    padding-right: 16px;    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.nav-4 .music{
+    background: black;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;    
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+/* end nav-4  */
+
+/* end navbare css  */
+
+/* **************************************************************************************************************************************************************************************** */
+
+/* start displayhome css  */
+
+/* start home-1  */
+.home-1{
+    
+    margin-bottom: 16px;
+
+}
+
+.home-1 h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* end home-1  */
+
+/* start home-2  */
+.home-2{
+    display: flex;
+    overflow: auto;
+
+}
+/* end home-2  */
+/* end displayhome css  */
+
+/* ********************************************************************************************************************************************************************************************** */
+
+/* start albumiteme css  */
+/* start alb-1  */
+.alb-1{
+    min-width: 180px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.alb-1:hover{
+    background-color: #ffffff;
+}
+
+.alb-1 img {
+    border-radius: 4px;
+    width: 215px;
+
+}
+
+.alb-1 p{
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.alb-1 .desc{
+    color: whitesmoke;
+    font-size: small;
+}
+/* end alb-1  */
+
+/* end albumiteme css   */
+
+/* ***************************************************************************************************************************************************************************************** */
+
+/* start songsitems css  */
+
+/* start sno-1  */
+.son-1{
+    min-width: 180px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.son-1:hover{
+    background: #ffffff26;
+}
+
+.son-1 img {
+    border-radius: 4px;
+    width: 190px;
+}
+
+.son-1 p{
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.son-1 .desc{
+    color: whitesmoke;
+    font-size: small;
+}
+
+/* end som-1  */
+
+/* end songsitems css  */
+
+/* *************************************************************************************************************************************************************************************** */
+
+/* start albumdata css  */
+
+/* start da-1  */
+.da-1{
+    display: flex;
+    margin-top: 40px;
+    gap: 32px;
+    flex-direction: column;
+
+}
+
+@media (min-width: 768px) {
+    .da-1 {
+      display: flex; /* Assuming flex is needed */
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+
+.da-1 img {
+    width: 350px;
+    border-radius: 4px;
+
+}
+/* end da-1  */
+
+/* start da-2  */
+.da-2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.da-2 h2 {
+    font-size: 5px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .da-2 {
+      font-size: 28px;
+    }
+  }
+
+  .da-2 .logo{
+    margin-top: 4px;
+  }
+
+  .da-2 img {
+    display: inline-block; 
+    width: 20px;
+
+}
+
+/* end da-2  */
+
+/* start da-3  */
+.da-3{
+    display: grid;
+    grid-column: 12px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    color: #a7a7a7;
+}
+
+@media (min-width: 640px) {
+    .da-3 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  
+
+.da-3 b{
+    margin-right: 16px;
+
+}
+
+.da-3 .date{
+    display: none;
+}
+
+  
+  @media (min-width: 640px) {
+    .da-3 .date {
+      display: block;
+    }
+  }
+  
+.da-3 img{
+    margin: auto;
+    width: 16px;
+    
+}
+/* end da-3  */
+
+/* start da-4  */
+.da-4{
+    display: grid;
+    grid-column: 12px;
+    gap: 8px;
+    padding: 8px;
+    align-items: center;
+    color: #a7a7a7;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.da-4:hover{
+    background-color: #ffffff2b;
+}
+
+@media (min-width: 640px) {
+    .da-4 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+.da-4 p {
+    color: white;
+}
+
+.da-4 b{
+    margin-right: 16px;
+    color: #a7a7a7;
+}
+
+.da-4 img{
+    display: inline;
+    width: 40px;
+    margin-right: 20px;
+
+
+}
+
+.albumName{
+    font-size: 15px;
+
+}
+
+.publish{
+    font-size: 15px;
+    display: none;
+}
+
+
+@media (min-width: 640px) {
+    .publish {
+      display: block;
+    }
+  }
+
+  .duration{
+    font-size: 15px;
+    text-align: center;
+
+  }
+/* end da-4  */
+
+
+
+
+
+
+/* end albumdata css  */
